@@ -1,0 +1,76 @@
+<div class="container">
+    <h1 class="mt-2 ms-2">
+        All Cities
+    </h1>
+    <table class="table table-hover mt-5 text-center ">
+        <thead>
+            <th >
+                #
+            </th>
+            <th>
+                City Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Action
+            </th>
+        </thead>
+        <tbody class="py-5">
+            <tr *ngFor="let c of citesData; let i=index " class="custom-padding" >
+                <td>
+                    {{i+1}}
+                 </td>
+                <td>
+                   {{ c.Name}}
+                </td>
+                <td>
+                    {{c.description}}
+                 </td>
+                 <td (click)="deletecity(i)">
+                    <i class="fa-regular fa-trash-can fa-lg fs-3" style="color:#044669;"></i>
+                 </td>
+            </tr>
+        </tbody>
+    
+    </table>
+    <div class="d-flex justify-content-end me-5 mt-5" >
+        <button type="button" class="btn add-btn text-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Add New City</button>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add City</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="myForm" (ngSubmit)="addnewcity()">
+              <div class="mb-3">
+                <label for="city-name" class="col-form-label">City Name:</label>
+                <input type="text" class="form-control" id="city-name" name="Name" formControlName="Name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Description:</label>
+                <textarea class="form-control" id="message-text" name="description" formControlName="description"></textarea>
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                <button  class="btn add-btn text-white">Add</button>
+              </div>
+            </form>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<!-- <div>
+    <input [(ngModel)]="searchArea" placeholder="Enter an area">
+    <button (click)="getAreaLocation()">Get Location</button>
+    <p *ngIf="location">Latitude: {{ location.lat }}, Longitude: {{ location.lng }}</p>
+  </div> -->
+  <!-- <google-map></google-map> -->

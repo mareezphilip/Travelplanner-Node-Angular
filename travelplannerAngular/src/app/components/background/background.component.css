@@ -1,0 +1,25 @@
+.bg{
+    background-image: url('/assets/3.gif');
+min-height: 95vh;
+
+width: 100%;
+background-size: cover;
+
+padding-top: 6rem;
+}
+.overlay-bg{
+    background-color: rgba(0, 0, 0, 0.444);
+    min-height: 95vh;
+   
+    
+  
+}
+h1{
+    vertical-align: middle !important;
+}
+.m-7 {
+    margin-top: 11% !important;
+}
+.gray-light{
+    color: rgb(168, 176, 179) !important;
+}

@@ -1,0 +1,51 @@
+.w-10{
+    width:4.5%;
+}
+/* .navbar-background { */
+    /* background-color: rgba(4, 14, 41, 0.258) ; */
+    /* background-color: rgba(4, 14, 41, 0.258) !important; */
+    /* background-color: rgba(14, 200, 4, 0.855) !important;
+
+
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3) !important;
+
+  } */
+/* .bg-color{ */
+    /* background-color: rgba(46, 38, 28, 0.668) !important; 
+     */
+     /* background-color: rgb(119, 5, 56)  !important;
+  
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3) !important;
+} */
+.navbar-home {
+    background-color: rgba(4, 14, 41, 0.258) !important;
+    /* Add any other background properties for the home page */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3) !important;
+  }
+  
+  .navbar-auth {
+    background-color: #044669;
+    /* Add any other background properties for the authentication page */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3) !important;
+  }
+.text-brown{
+    color: rgb(58, 43, 23);
+    font-weight:bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Logout-btn{
+    /* border:.2rem solid white; */
+   
+  
+background-color: transparent;
+font-family:Georgia, 'Times New Roman', Times, serif;
+text-decoration: none !important;
+}
+
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}

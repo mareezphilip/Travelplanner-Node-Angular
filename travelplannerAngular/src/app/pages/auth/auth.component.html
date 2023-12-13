@@ -1,0 +1,22 @@
+<div class="shadow-lg my-5 w-60 m-auto mt-10 ">
+    <div class="row justify-content-center pt-5 pb-2 ">
+        <img src="assets/auth.png" alt="" class="col-6 w-15" >
+        <h1 class="col-6 ms-5 align-self-center text-color">Travel Planner </h1>
+
+    </div>
+    <hr >
+    <div class="row">
+        <button class="btn col-6 text-color fs-5 " (click)="loginfun()">Login</button>
+        <button class="btn col-6 text-color fs-5" (click)="registerfun()">Register</button>
+    </div>
+    <hr>
+
+    <div *ngIf="islogin">
+        <app-login></app-login>
+    
+    </div>
+    <div *ngIf="isregister">
+        <app-register></app-register>
+    
+    </div>
+</div>
